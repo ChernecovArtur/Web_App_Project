@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+}
+
+<div>
+    <h1 class="display-4">Расписание пар</h1>
+
+</div>
+
+<form method="post">
+    <p>
+        <label for="name_group">Название группы:</label>
+        <input type="text" name="name_group" value="" />
+    </p>
+
+    <p>
+        <label for="password_for_headman">Пароль старосты:</label>
+        <input type="text" name="password_for_headman" value="" />
+    </p>
+
+    <p><input type="submit" name="buttonSubmit" value="Показать расписание" /></p>
+
+</form>
+<h2>@Model.Message</h2>
